@@ -12,7 +12,6 @@ const MemoDetails = () => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        console.log('memo detail changed');
         if (Object.keys(details).length) {
             inputTitle.current.value = details.title;
             inputDescription.current.value = details.description;
@@ -26,7 +25,6 @@ const MemoDetails = () => {
     })
 
     const changeData = () => {
-        console.log('datachanged', status);
         if (status==="add") {
             dispatch(addMemo(
                 {
@@ -37,7 +35,6 @@ const MemoDetails = () => {
             ));
         }
         if (status==='edit') {
-            console.log('edit', details.id);
             dispatch(editMemo(
                 {
                     title: inputTitle.current.value,

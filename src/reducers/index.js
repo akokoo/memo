@@ -20,7 +20,6 @@ const initialState = {
 export default function reducers (state = initialState, action) {
     switch (action.type) {
         case 'setCurrentMemo': {
-            console.log(action.status)
             return {
                 ...state,
                 memodetails: {
@@ -58,7 +57,6 @@ export default function reducers (state = initialState, action) {
             }
         }
         case 'deleteMemo': {
-            console.log("state", state, action.id)
             return {
                 ...state,
                 memolist: state.memolist.filter(memo => {

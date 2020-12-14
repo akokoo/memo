@@ -6,10 +6,9 @@ import DeleteButton from "./../deletebutton";
 import "./memo.css";
 
 const Memo = (props) => {
-    const {id, title, description} = props.settings;
+    const {id, title} = props.settings;
     const dispatch = useDispatch();
     const openDetails = () => {
-        console.log('click', props.settings)
         dispatch(setCurrentMemo(props.settings, 'show'))
     }
     return (

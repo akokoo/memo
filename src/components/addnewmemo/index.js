@@ -5,7 +5,6 @@ import "./addnewmemo.css";
 const AddNewMemo = () => {
     const dispatch = useDispatch();
     const addNewMemo = () => {
-        console.log('add');
         dispatch(setCurrentMemo({}, 'add'))
     }
     return (
