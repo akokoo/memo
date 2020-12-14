@@ -1,0 +1,11 @@
+
+.title,
+.description {
+   margin: 10px;
+}
+ .title textarea,
+.description textarea {
+   min-width: 100%;
+   resize: none;
+   outline: none;
+}

@@ -1,0 +1,44 @@
+.memo-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+}
+.memo-container:hover {
+    background-color:#f7d66d;
+}
+.memo-container:hover .memo-button-container {
+    display: block;
+}
+.memo-title {
+    flex-grow: 1;
+}
+.memo-button-container {
+    display: none;
+    border:1px solid red;  
+    height: 25px;
+    width: 25px;
+    border-radius: 3px;
+}
+.settings-button {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: black;
+    box-shadow: 0px 8px 0px black, 0px 16px 0px black;
+    margin: 0 auto;
+}
+.memo-button-container:hover .settings-container{
+    right: 0;
+    transition: right 2s ease;
+}
+.settings-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: -25%;
+    transition: right 2s ease;
+    background-color: green;
+}

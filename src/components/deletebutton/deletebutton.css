@@ -1,0 +1,8 @@
+.delete-button {
+    display: flex;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    border: 1px solid red;
+}

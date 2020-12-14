@@ -1,0 +1,15 @@
+.add-button-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+.add-button {
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    text-align: center;
+    line-height:21px;
+    color: #252525;
+    border-radius: 50%;
+    font-size: 1.5em;
+}

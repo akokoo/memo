@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import Memolist from "./components/memolist";
+import MemoDetails from "./components/memodetails";
+import AddNewMemo from "./components/addnewmemo";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="sidebar-container">
+        <AddNewMemo />
+        <Memolist />
+      </div>
+      <div className="memo-details-container">
+        <MemoDetails />
+      </div>
     </div>
   );
 }
